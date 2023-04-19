@@ -3,7 +3,7 @@ The source code is in Python
 import numpy as np
 import os
 import cv2
-filename = 'video.avi'
+filename = 'video.uvi'
 frames_per_second = 24.0
 res = '720p'
 def change_res(cap, width, height):
@@ -30,7 +30,7 @@ def get_video_type(filename):
     filename, ext = os.path.splitext(filename)
     if ext in VIDEO_TYPE:
       return  VIDEO_TYPE[ext]
-    return VIDEO_TYPE['avi']
+    return VIDEO_TYPE['uvi']
 cap = cv2.VideoCapture(0)
 out = cv2.VideoWriter(filename, get_video_type(filename), 25, get_dims(cap, res))
 while True:
