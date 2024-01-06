@@ -1,4 +1,10 @@
 # Video-Recording
+
+The video recording plays major role in vitness.
+It's very easy to develop in python language.
+
+Storage:Local storage of our device.
+
 The source code is in Python
 import numpy as np
 import os
